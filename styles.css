@@ -179,6 +179,10 @@ h1 {
   color: rgb(3, 3, 3);
 }
 
+.hide-side-bar {
+  display: none;
+}
+
 @media (max-width: 425px) {
   .search_form {
     display: none;
