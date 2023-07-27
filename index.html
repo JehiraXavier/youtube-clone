@@ -1,17 +1,478 @@
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
+    <link rel="icon" href="./images/icon.svg" type="image/icon type" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="styles.css" />
-    <title>Youtube Clone</title>
+    <title>Youtube UI Clone</title>
   </head>
   <body>
-    <header class="header">.</header>
-    <main>
-      <div class="side-bar">.</div>
-      <div class="content">.</div>
-    </main>
+    <div class="header">
+      <div class="header_left">
+        <i id="menu" class="material-icons">menu</i>
+        <img src="./images/logo-light.svg" alt="" />
+      </div>
+
+      <div class="search_form">
+        <form action="">
+          <input type="text" placeholder="Search" />
+          <button><i class="material-icons">search</i></button>
+        </form>
+      </div>
+
+      <div class="header_right">
+        <i class="material-icons display-this">search</i>
+        <i class="material-icons">videocam</i>
+        <i class="material-icons">apps</i>
+        <i class="material-icons">notifications</i>
+        <i class="material-icons display-this">account_circle</i>
+      </div>
+    </div>
+
+    <div class="main_container">
+      <div class="side_bar">
+        <div class="sidebar_categories">
+          <div class="sidebar_category">
+            <i class="material-icons">home</i>
+            <span>Home</span>
+          </div>
+          <div class="sidebar_category">
+            <i class="material-icons">local_fire_department</i>
+            <span>Trending</span>
+          </div>
+          <div class="sidebar_category">
+            <i class="material-icons">subscriptions</i>
+            <span>Subcriptions</span>
+          </div>
+        </div>
+        <hr />
+        <div class="sidebar_categories">
+          <div class="sidebar_category">
+            <i class="material-icons">library_add_check</i>
+            <span>Library</span>
+          </div>
+          <div class="sidebar_category">
+            <i class="material-icons">history</i>
+            <span>History</span>
+          </div>
+          <div class="sidebar_category">
+            <i class="material-icons">play_arrow</i>
+            <span>Your Videos</span>
+          </div>
+          <div class="sidebar_category">
+            <i class="material-icons">watch_later</i>
+            <span>Watch Later</span>
+          </div>
+          <div class="sidebar_category">
+            <i class="material-icons">thumb_up</i>
+            <span>Liked Videos</span>
+          </div>
+        </div>
+        <hr />
+      </div>
+
+      <div class="videos">
+        <h1>Recommended</h1>
+
+        <div class="videos_container">
+          <div class="video">
+            <div class="video__thumbnail">
+              <a href="https://www.youtube.com/watch?v=7S_tz1z_5bA">
+                <img src="./images/image_3.webp" alt="" />
+              </a>
+            </div>
+            <div class="video__details">
+              <div class="author">
+                <a href="https://www.youtube.com/@programmingwithmosh">
+                  <img src="./images/thumbnail_3.jpg" alt="" />
+                </a>
+              </div>
+              <div class="title">
+                <h3>MySQL Tutorial for Beginners [Full Course]</h3>
+
+                <span>
+                  <a href="https://www.youtube.com/@programmingwithmosh">
+                    Programming with Mosh</a
+                  >
+                  <br />
+                  9.6M Views • 4 years Ago</span
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="video">
+            <div class="video__thumbnail">
+              <a href="https://www.youtube.com/watch?v=qNyzyzbX0wo">
+                <img src="./images/image_1.webp" alt="" />
+              </a>
+            </div>
+            <div class="video__details">
+              <div class="author">
+                <a href="https://www.youtube.com/@OneMedia.">
+                  <img src="./images/thumbnail_1.jpg" alt="" />
+                </a>
+              </div>
+              <div class="title">
+                <h3>HIDDEN STRIKE Trailer (2023) Jackie Chan, John Cena</h3>
+                <span>
+                  <a href="https://www.youtube.com/@OneMedia."> ONE Media</a
+                  ><br />
+                  8.5M Views • 1 Month Ago</span
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="video">
+            <div class="video__thumbnail">
+              <a href="https://www.youtube.com/watch?v=46cXFUzR9XM">
+                <img src="./images/image_4.webp" alt="" />
+              </a>
+            </div>
+            <div class="video__details">
+              <div class="author">
+                <a href="https://www.youtube.com/@NetflixIndiaOfficial">
+                  <img src="./images/thumbnail_4.jpg" alt="" />
+                </a>
+              </div>
+              <div class="title">
+                <h3>
+                  Bella Ciao Full Song | La Casa De Papel | Money Heist |
+                  Netflix India
+                </h3>
+                <span>
+                  <a href="https://www.youtube.com/@NetflixIndiaOfficial">
+                    Netflix India</a
+                  ><br />
+                  79M Views • 3 Years Ago</span
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="video">
+            <div class="video__thumbnail">
+              <a href="https://www.youtube.com/watch?v=kpoUjXlWGCU">
+                <img src="/images/image_2.webp" alt="" />
+              </a>
+            </div>
+            <div class="video__details">
+              <div class="author">
+                <a href="https://www.youtube.com/@yrftamil">
+                  <img src="/images/thumbnail_2.jpg" alt="" />
+                </a>
+              </div>
+              <div class="title">
+                <h3>Zoom Boom Doom Pathaan Song | Shah Rukh Khan, Deepika</h3>
+                <span>
+                  <a href="https://www.youtube.com/@yrftamil"> YRF Tamil </a
+                  ><br />
+                  3.9M Views • 7 months Ago</span
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="video">
+            <div class="video__thumbnail">
+              <a href="https://www.youtube.com/watch?v=2Ji-clqUYnA">
+                <img src="./images/image_5.webp" alt="" />
+              </a>
+            </div>
+            <div class="video__details">
+              <div class="author">
+                <a href="https://www.youtube.com/@CodingAddict">
+                  <img src="./images/thumbnail_5.jpg" alt="" />
+                </a>
+              </div>
+              <div class="title">
+                <h3>Javascript Fundamentals</h3>
+                <span
+                  ><a href="https://www.youtube.com/@CodingAddict">
+                    Coding Addict</a
+                  ><br />
+                  656K views • 3 years ago
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <div class="video">
+            <div class="video__thumbnail">
+              <a href="https://www.youtube.com/watch?v=gxCtHmPOqtg">
+                <img src="./images/image_6.webp" alt="" />
+              </a>
+            </div>
+            <div class="video__details">
+              <div class="author">
+                <a href="https://www.youtube.com/@JoBloSuperheroes">
+                  <img src="./images/thumbnail_6.jpg" alt="" />
+                </a>
+              </div>
+              <div class="title">
+                <h3>SHANG-CHI (2021) Full Bus Fight [HD] Marvel IMAX Clip</h3>
+                <span>
+                  <a href="https://www.youtube.com/@JoBloSuperheroes">
+                    JoBlo Superheroes </a
+                  ><br />
+                  3.6M views • 6 months ago</span
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="video">
+            <div class="video__thumbnail">
+              <a href="https://www.youtube.com/watch?v=CVClHLwv-4I">
+                <img src="./images/image_7.webp" alt="" />
+              </a>
+            </div>
+            <div class="video__details">
+              <div class="author">
+                <a href="https://www.youtube.com/@WebDevSimplified">
+                  <img src="./images/thumbnail_7.jpg" alt="" />
+                </a>
+              </div>
+              <div class="title">
+                <h3>Build Real Time Face Detection With JavaScript</h3>
+                <span>
+                  <a href="https://www.youtube.com/@WebDevSimplified">
+                    Web Dev Simplified </a
+                  ><br />
+                  1.3M views • 4 years ago</span
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="video">
+            <div class="video__thumbnail">
+              <a href="https://www.youtube.com/watch?v=2Yd2HhKIsiE">
+                <img src="./images/image_8.webp" alt="" />
+              </a>
+            </div>
+            <div class="video__details">
+              <div class="author">
+                <a href="https://www.youtube.com/@WondasticTech">
+                  <img src="./images/thumbnail_8.jpg" alt="" />
+                </a>
+              </div>
+              <div class="title">
+                <h3>How Kit Kat Are Made In Factory - How It's Made Kit Kat</h3>
+                <span>
+                  <a href="https://www.youtube.com/@WondasticTech">
+                    Wondastic Tech </a
+                  ><br />
+                  20M Views • 2 Years Ago</span
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="video">
+            <div class="video__thumbnail">
+              <a href="https://www.youtube.com/watch?v=7S_tz1z_5bA">
+                <img src="./images/image_3.webp" alt="" />
+              </a>
+            </div>
+            <div class="video__details">
+              <div class="author">
+                <a href="https://www.youtube.com/@programmingwithmosh">
+                  <img src="./images/thumbnail_3.jpg" alt="" />
+                </a>
+              </div>
+              <div class="title">
+                <h3>MySQL Tutorial for Beginners [Full Course]</h3>
+
+                <span>
+                  <a href="https://www.youtube.com/@programmingwithmosh">
+                    Programming with Mosh</a
+                  >
+                  <br />
+                  9.6M Views • 4 years Ago</span
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="video">
+            <div class="video__thumbnail">
+              <a href="https://www.youtube.com/watch?v=qNyzyzbX0wo">
+                <img src="./images/image_1.webp" alt="" />
+              </a>
+            </div>
+            <div class="video__details">
+              <div class="author">
+                <a href="https://www.youtube.com/@OneMedia.">
+                  <img src="./images/thumbnail_1.jpg" alt="" />
+                </a>
+              </div>
+              <div class="title">
+                <h3>HIDDEN STRIKE Trailer (2023) Jackie Chan, John Cena</h3>
+                <span>
+                  <a href="https://www.youtube.com/@OneMedia."> ONE Media</a
+                  ><br />
+                  8.5M Views • 1 Month Ago</span
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="video">
+            <div class="video__thumbnail">
+              <a href="https://www.youtube.com/watch?v=46cXFUzR9XM">
+                <img src="./images/image_4.webp" alt="" />
+              </a>
+            </div>
+            <div class="video__details">
+              <div class="author">
+                <a href="https://www.youtube.com/@NetflixIndiaOfficial">
+                  <img src="./images/thumbnail_4.jpg" alt="" />
+                </a>
+              </div>
+              <div class="title">
+                <h3>
+                  Bella Ciao Full Song | La Casa De Papel | Money Heist |
+                  Netflix India
+                </h3>
+                <span>
+                  <a href="https://www.youtube.com/@NetflixIndiaOfficial">
+                    Netflix India</a
+                  ><br />
+                  79M Views • 3 Years Ago</span
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="video">
+            <div class="video__thumbnail">
+              <a href="https://www.youtube.com/watch?v=kpoUjXlWGCU">
+                <img src="/images/image_2.webp" alt="" />
+              </a>
+            </div>
+            <div class="video__details">
+              <div class="author">
+                <a href="https://www.youtube.com/@yrftamil">
+                  <img src="/images/thumbnail_2.jpg" alt="" />
+                </a>
+              </div>
+              <div class="title">
+                <h3>Zoom Boom Doom Pathaan Song | Shah Rukh Khan, Deepika</h3>
+                <span>
+                  <a href="https://www.youtube.com/@yrftamil"> YRF Tamil </a
+                  ><br />
+                  3.9M Views • 7 months Ago</span
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="video">
+            <div class="video__thumbnail">
+              <a href="https://www.youtube.com/watch?v=2Ji-clqUYnA">
+                <img src="./images/image_5.webp" alt="" />
+              </a>
+            </div>
+            <div class="video__details">
+              <div class="author">
+                <a href="https://www.youtube.com/@CodingAddict">
+                  <img src="./images/thumbnail_5.jpg" alt="" />
+                </a>
+              </div>
+              <div class="title">
+                <h3>Javascript Fundamentals</h3>
+                <span
+                  ><a href="https://www.youtube.com/@CodingAddict">
+                    Coding Addict</a
+                  ><br />
+                  656K views • 3 years ago
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <div class="video">
+            <div class="video__thumbnail">
+              <a href="https://www.youtube.com/watch?v=gxCtHmPOqtg">
+                <img src="./images/image_6.webp" alt="" />
+              </a>
+            </div>
+            <div class="video__details">
+              <div class="author">
+                <a href="https://www.youtube.com/@JoBloSuperheroes">
+                  <img src="./images/thumbnail_6.jpg" alt="" />
+                </a>
+              </div>
+              <div class="title">
+                <h3>SHANG-CHI (2021) Full Bus Fight [HD] Marvel IMAX Clip</h3>
+                <span>
+                  <a href="https://www.youtube.com/@JoBloSuperheroes">
+                    JoBlo Superheroes </a
+                  ><br />
+                  3.6M views • 6 months ago</span
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="video">
+            <div class="video__thumbnail">
+              <a href="https://www.youtube.com/watch?v=CVClHLwv-4I">
+                <img src="./images/image_7.webp" alt="" />
+              </a>
+            </div>
+            <div class="video__details">
+              <div class="author">
+                <a href="https://www.youtube.com/@WebDevSimplified">
+                  <img src="./images/thumbnail_7.jpg" alt="" />
+                </a>
+              </div>
+              <div class="title">
+                <h3>Build Real Time Face Detection With JavaScript</h3>
+                <span>
+                  <a href="https://www.youtube.com/@WebDevSimplified">
+                    Web Dev Simplified </a
+                  ><br />
+                  1.3M views • 4 years ago</span
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="video">
+            <div class="video__thumbnail">
+              <a href="https://www.youtube.com/watch?v=2Yd2HhKIsiE">
+                <img src="./images/image_8.webp" alt="" />
+              </a>
+            </div>
+            <div class="video__details">
+              <div class="author">
+                <a href="https://www.youtube.com/@WondasticTech">
+                  <img src="./images/thumbnail_8.jpg" alt="" />
+                </a>
+              </div>
+              <div class="title">
+                <h3>How Kit Kat Are Made In Factory - How It's Made Kit Kat</h3>
+                <span>
+                  <a href="https://www.youtube.com/@WondasticTech">
+                    Wondastic Tech </a
+                  ><br />
+                  20M Views • 2 Years Ago</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="main.js" defer></script>
   </body>
 </html>
